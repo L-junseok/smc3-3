@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class Random {
 
 	public static void main(String[] args) {
-		System.out.print("10°³ÀÇ ·£´ı ¼ıÀÚ Áß ÇÏ³ª¸¦ ¸ÂÃçº¸¼¼¿ä(1~50±îÁö)");
-		Scanner sc = new Scanner(System.in);
-		int num = sc.nextInt();
+		System.out.print("10ê°œì˜ ëœë¤ ìˆ«ì ì¤‘ í•˜ë‚˜ë¥¼ ë§ì¶°ë³´ì„¸ìš”(1~50ê¹Œì§€)");
+		Scanner sc = new Scanner(System.in);	//ìŠ¤ìºë„ˆ ìƒì„±
+		int num = sc.nextInt();		// ì…ë ¥ë¬¸ ì¶”ê°€
 		int []arr = new int[10];
 		int diff = 0;
 		
@@ -18,13 +18,13 @@ public class Random {
 		
 		for(int i=0; i<10; i++){
 			if(arr[i] == num){
-				System.out.println("´çÃ·! ÀÏÄ¡ÇÏ´Â ¼ıÀÚ°¡ ÀÖ½À´Ï´Ù.");
+				System.out.println("ë‹¹ì²¨! ì¼ì¹˜í•˜ëŠ” ìˆ«ìê°€ ìˆìŠµë‹ˆë‹¤.");
 				diff=1;
 			}
 			
 		}
 		if(diff == 0){
-			System.out.println("²Î! ´ÙÀ½ ±âÈ¸¿¡");
+			System.out.println("ê½! ë‹¤ìŒ ê¸°íšŒì—");
 		}
 		
 
